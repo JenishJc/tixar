@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TixAR Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #5200ff, #9f2fff);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <section class="flex overflow-hidden flex-col self-stretch shadow-2xl bg-gradient-to-br from-blue-500 to-blue-700"
+        aria-label="Hero Section">
+        <div class="flex relative flex-col items-center px-20 pt-8 pb-56 w-full md:min-h-[770px] max-md:px-5 max-md:pb-24 max-md:max-w-full z-[1]"
+            role="banner">
+            <img loading="lazy" src="Gridlines.svg" class="object-cover absolute inset-0 size-full opacity-40"
+                alt="Hero background" role="presentation" />
+            <div class="flex relative flex-col -mb-11 max-w-full w-[960px] max-md:mb-2.5">
+                <nav class="flex flex-wrap gap-10 justify-between items-center px-12 py-3 w-full bg-white rounded-3xl shadow-[6px_4px_41px_rgba(0,34,155,0.62)] md:px-5"
+                    role="navigation" aria-label="Main navigation">
+                    <!-- Logo Section -->
+                    <a href="/" class="flex justify-center items-center min-h-[48px] w-[100px] max-sm:w-auto"
+                        aria-label="Home">
+                        <img loading="lazy" src="logo.svg" class="object-contain max-w-full w-[100px] max-sm:w-[80px]"
+                            alt="Company logo" />
+                    </a>
+
+                    <!-- Links Section (Hidden on Small Screens) -->
+                    <div class="hidden md:flex gap-10 items-center text-base font-bold leading-tight whitespace-nowrap">
+                        <a href="./price.html" class="text-blue-700 hover:underline focus:outline-none">
+                            Features
+                        </a>
+                        <a href="#integrations" class="text-blue-700 hover:underline focus:outline-none">
+                            Integrations
+                        </a>
+                    </div>
+
+                    <!-- CTA Button (Hidden on Small Screens) -->
+                    <button
+                        class="hidden md:flex px-6 py-3 text-xl font-bold tracking-tight rounded-2xl border-2 border-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 whitespace-nowrap"
+                        aria-label="Book a Demo">
+                        <span class="text-blue-700">Book a Demo</span>
+                    </button>
+
+                    <!-- Hamburger Menu (Visible on Small Screens) -->
+                    <button class="flex md:hidden text-blue-700 text-3xl focus:outline-none z-10"
+                        id="mobile-menu-toggle" aria-label="Toggle Menu">
+                        ☰
+                    </button>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobile-menu"
+                        class="hidden absolute top-16 left-0 w-full bg-white rounded-b-3xl -mt-3 shadow-lg p-5 md:hidden">
+                        <a href="#features" class="block py-2 text-blue-700 hover:underline focus:outline-none">
+                            Features
+                        </a>
+                        <a href="#integrations" class="block py-2 text-blue-700 hover:underline focus:outline-none">
+                            Integrations
+                        </a>
+                        <button
+                            class="block w-full px-4 py-2 mt-4 text-center font-bold text-blue-700 border-2 border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none"
+                            aria-label="Book a Demo">
+                            Book a Demo
+                        </button>
+                    </div>
+                </nav>
+
+
+                <main class="flex flex-col mx-7 mt-32 max-md:mt-10 max-md:mr-2.5 max-md:max-w-full">
+                    <section class="flex flex-col justify-center items-center w-full text-center max-md:max-w-full"
+                        aria-labelledby="hero-title">
+                        <h1 id="hero-title"
+                            class="text-[90px] font-bold tracking-tighter leading-tight text-white uppercase  max-md:max-w-full max-md:text-4xl italic">
+                            Try before you buy!
+                        </h1>
+                        <p class="mt-4 max-w-full text-2xl font-medium leading-7 text-gray-200 max-md:max-w-full">
+                            Introduce your products with AR try-ons to let customers explore
+                            everything from all possible angles. Customise your Products with
+                            TixAR's seamless.
+                        </p>
+                    </section>
+                    <div
+                        class="flex group flex-col self-center px-4 py-px mt-12 max-w-full w-[263px] max-md:mt-10 relative">
+                        <button
+                            class="relative flex overflow-hidden justify-center px-6 py-3.5 w-full bg-white rounded-2xl min-h-[55px] shadow-[-1px_5px_19px_rgba(0,0,0,0.48)] max-md:px-5 max-md:mr-1 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                            aria-label="Schedule Demo">
+                            <span class="flex items-center gap-2">
+                                <span
+                                    class="text-2xl font-bold self-stretch my-auto text-blue-700 focus:outline-none tracking-tighter leading-tight whitespace-nowrap">
+                                    Book a Demo
+                                </span>
+                                <span class="rotate-90" aria-hidden="true">
+                                    <img loading="lazy" src="arrow-right.svg"
+                                        class="w-[30px] object-contain aspect-[1.25] stroke-[5px] stroke-blue-600"
+                                        alt="" />
+                                </span>
+                            </span>
+                        </button>
+                        <span
+                            class="absolute group-hover:rotate-[-15deg] left-5 -translate-x-1/2 top-[100%] -translate-y-1/2 transition-all duration-300 ease-in-out">
+                            <img class="" alt="" src="Arrow.svg" />
+                        </span>
+                        <p
+                            class="self-end group-hover:top-[76px] absolute top-[92px] -translate-y-1/2 transition-all duration-300 ease-in-out text-lg italic font-bold tracking-tighter leading-tight text-center text-violet-100 -z-[1]">
+                            No Payment Required!
+                        </p>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+    <section class=" h-full flex overflow-hidden gap-2.5 items-center py-9  mx-auto max-md:px-5"
+        aria-labelledby="experience-ar">
+        <section class="relative -z-20 bg-no-repeat bg-cover h-full w-full"
+            style="background-image: url(background.svg);"
+            class="flex flex-col flex-1 shrink justify-center self-stretch px-1 sm:py-12 my-auto w-full rounded-3xl sm:border border-solid basis-0 border-neutral-300 min-w-[240px] max-md:max-w-full relative">
+
+            <div
+                class="sm:absolute -z-10 left-1/2 sm:-translate-x-1/2 top-6 flex justify-center sm:items-start sm:flex-row flex-col gap-y-5 items-center sm:scale-[100%] scale-[80%]">
+                <img class="mt-7" loading="lazy" src="experience.svg" alt="experience" />
+                <img loading="lazy" src="AR.svg" alt="experience" />
+                <div>
+                </div>
+            </div>
+
+            <img class="mt-28 z-10 flex justify-center mx-auto" alt="model" src="model.svg" />
+        </section>
+        <div class="absolute  lg:flex hidden flex-col text-white gap-8 left-[20%] -translate-x-1/2">
+            <button class="bg-[#1447FF] p-5 rounded-2xl w-[302px] text-[24px] leading-0 text-start">Try Earings</button>
+            <button class="bg-[#1447FF] p-5 rounded-2xl w-[302px] text-[24px] leading-0 text-start">Try
+                Necklace</button>
+            <button class="bg-[#1447FF] p-5 rounded-2xl w-[302px] text-[24px] leading-0 text-start">Try Wedding
+                Ring</button>
+        </div>
+    </section>
+
+
+    <!-- Hero Section -->
+    <section class="flex overflow-hidden gap-2.5 items-center max-w-[1440px] mx-auto max-md:px-5 2xl:px-0 px-9"
+        aria-labelledby="features-title">
+        <article
+            class="flex flex-col flex-1 shrink justify-center self-stretch px-1 sm:pt-12 my-auto w-full sm:border border-solid basis-0 border-neutral-300 min-w-[240px] max-md:max-w-full bg-white rounded-3xl">
+            <header class="flex flex-col self-center px-16 max-w-full text-center text-black w-[1360px] max-md:px-5">
+                <div class="flex flex-col justify-center items-center max-w-full w-[1211px]">
+                    <h1 id="features-title"
+                        class="text-8xl italic font-bold tracking-tighter leading-tight uppercase  max-md:max-w-full max-md:text-4xl">
+                        our features
+                    </h1>
+                    <p class="mt-3 text-2xl leading-7 w-[587px] max-md:max-w-full">
+                        Enhance customer engagement and create a memorable shopping experience with TixAR's
+                        state-of-the-art features provided through our SDK kit.
+                    </p>
+                </div>
+            </header>
+
+            <section
+                class="text-white flex-wrap gap-7 grid-cols-12 grid justify-center sm:p-9 max-w-[1440px] mt-7 w-full">
+                <article
+                    class="flex group hover:cursor-pointer overflow-hidden flex-col self-stretch rounded-2xl border border-solid shadow-sm border-indigo-200 border-opacity-30 h-[490px] w-full  max-md:max-w-full col-span-12 lg:col-span-7">
+                    <div
+                        class="flex overflow-hidden flex-col w-full h-full rounded-3xl border-white border-solid bg-[linear-gradient(180deg,#485CC4_0%,#1842D8_100%)] sm:border-[11px] max-md:max-w-full">
+                        <div
+                            class="flex relative flex-col px-9 pb-14 w-full h-full bg-blend-overlay max-md:px-5 max-md:max-w-full">
+                            <img loading="lazy" src="Gridlines.svg" alt=""
+                                class="object-cover absolute inset-0 size-full" />
+                            <img loading="lazy" src="mobile.svg" alt="Global reach illustration"
+                                class="object-contain self-end max-w-full bg-blend-normal aspect-[1.02] w-[369px] absolute group-hover:rotate-[15deg] transition-all duration-500 ease-in-out" />
+                            <div
+                                class="flex text-white relative flex-col justify-center max-w-full w-[492px] top-[87%] -translate-y-1/2 absolute group-hover:mt-[-25px] transition-all duration-500 ease-in-out">
+                                <h2
+                                    class="sm:text-4xl text-2xl italic font-bold tracking-tighter leading-tight uppercase  max-md:max-w-full">
+                                    USER-FRIENDLY
+                                </h2>
+                                <p
+                                    class="mt-2.5 sm:text-2xl text-base font-semibold sm:leading-7 leading-5 max-md:max-w-full">
+                                    Our One-Tap technology
+                                    helps your customers enjoy shopping with stunning visuals.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex group overflow-hidden flex-col self-stretch text-white rounded-2xl border border-solid shadow-sm border-indigo-200 border-opacity-30 h-[490px] col-span-12 lg:col-span-5 max-md:max-w-full w-full">
+                    <div
+                        class="flex overflow-hidden flex-col w-full h-full rounded-3xl border-white border-solid bg-[linear-gradient(180deg,#485CC4_0%,#1842D8_100%)] sm:border-[11px] max-md:max-w-full">
+                        <div
+                            class="flex relative flex-col px-7 pt-9 pb-14 w-full h-full bg-blend-overlay max-md:px-5 max-md:max-w-full">
+                            <img loading="lazy" src="Gridlines.svg" alt=""
+                                class="object-cover absolute inset-0 size-full" />
+                            <img loading="lazy" src="switch.svg" alt="Integration illustration"
+                                class="object-contain self-end max-w-full bg-blend-normal aspect-[1.49] w-[312px] group-hover:scale-[1.2] transition-all duration-500 ease-in-out" />
+                            <div
+                                class="flex relative flex-col justify-center mt-11 max-w-full h-[145px] w-[379px] max-md:mt-10 group-hover:mt-[25px] transition-all duration-500 ease-in-out">
+                                <h2
+                                    class="sm:text-4xl text-2xl italic font-bold tracking-tighter leading-tight uppercase  max-md:max-w-full">
+                                    Easy to Integrate
+                                </h2>
+                                <p class="mt-2.5 sm:text-2xl text-base font-semibold sm:leading-7 leading-5">
+                                    TixAR gives you Seamless Integration into your existing products with an immersive
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex group overflow-hidden flex-col self-stretch rounded-2xl border border-solid shadow-sm border-indigo-200 border-opacity-30 h-[490px] w-full col-span-12 lg:col-span-5  max-md:max-w-full">
+                    <div
+                        class="flex overflow-hidden flex-col w-full h-full rounded-2xl border-white border-solid shadow-lg bg-[linear-gradient(180deg,#485CC4_0%,#1842D8_100%)] sm:border-[11px] max-md:max-w-full">
+                        <div
+                            class="flex relative flex-col pt-8 pr-16 pb-14 pl-7 w-full h-full bg-blend-overlay max-md:px-5 max-md:max-w-full">
+                            <img loading="lazy" src="Gridlines.svg" alt=""
+                                class="object-cover absolute inset-0 size-full" />
+                            <img loading="lazy" src="calc.svg" alt="3D perspective visualization"
+                                class="object-contain self-end max-w-full aspect-[0.69] w-[177px] absolute group-hover:rotate-[15deg] transition-all duration-500 ease-in-out" />
+                            <div
+                                class="flex relative flex-col justify-center max-w-full w-[350px] top-[87%] -translate-y-1/2 absolute group-hover:mt-[-25px] transition-all duration-500 ease-in-out">
+                                <h2
+                                    class="sm:text-4xl text-2xl italic font-bold tracking-tighter leading-tight uppercase ">
+                                    3D Perspective
+                                </h2>
+                                <p
+                                    class="mt-2.5 sm:text-2xl text-base font-semibold sm:leading-7 leading-5 max-md:max-w-full">
+                                    AR Try-on helps you look at your favourite items look on you, in real-time, and in
+                                    stunning detail.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article
+                    class="flex group overflow-hidden flex-col self-stretch rounded-2xl border border-solid shadow-sm border-indigo-200 border-opacity-30 h-[490px] w-full col-span-12 lg:col-span-7 max-md:max-w-full">
+                    <div
+                        class="flex overflow-hidden flex-col w-full h-full rounded-3xl border-white border-solid bg-[linear-gradient(180deg,#485CC4_0%,#1842D8_100%)] sm:border-[11px] max-md:max-w-full">
+                        <div
+                            class="flex relative flex-col px-9 pb-14 w-full h-full bg-blend-overlay max-md:px-5 max-md:max-w-full">
+                            <img loading="lazy" src="Gridlines.svg" alt=""
+                                class="object-cover absolute inset-0 size-full" />
+                            <img loading="lazy" src="bag.svg" alt="Global reach illustration"
+                                class="object-contain self-end max-w-full bg-blend-normal aspect-[1.02] w-[369px] absolute group-hover:scale-[1.2] transition-all duration-500 ease-in-out" />
+                            <div
+                                class="flex relative flex-col justify-center max-w-full w-[492px] top-[87%] -translate-y-1/2 absolute group-hover:mt-[-25px] transition-all duration-500 ease-in-out">
+                                <h2
+                                    class="sm:text-4xl text-2xl italic font-bold tracking-tighter leading-tight uppercase  max-md:max-w-full">
+                                    Global reach
+                                </h2>
+                                <p
+                                    class="mt-2.5 sm:text-2xl text-base font-semibold sm:leading-7 leading-5 max-md:max-w-full ">
+                                    Reach your customers on a global scale, and scale your products that transcend
+                                    borders and expand your market presence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="flex flex-wrap gap-9 items-stretch sm:px-9  mt-7 w-full text-white">
+
+
+            </section>
+        </article>
+    </section>
+
+    <section class="flex flex-col justify-center py-9 mx-auto max-md:px-5 text-center max-md:px-5 max-md:pb-24">
+        <section class="flex flex-col w-full  mx-auto  shadow-2xl bg-slate-950 px-5 pt-9">
+            <section class="max-w-[1440px] mx-auto" aria-labelledby="integration-title "
+                class="flex relative flex-col px-7 pt-24 w-full min-h-[922px] max-md:px-5 max-md:pt-24">
+                <div class="absolute inset-0 bg-gradient-to-b from-purple-900/20 to-transparent">
+                    <div class="absolute inset-0" role="presentation"></div>
+                </div>
+                <img loading="lazy" src="Gridlines.svg" class="object-cover absolute inset-0 size-full opacity-10"
+                    alt="Decorative background pattern" role="presentation" />
+                <div class="flex relative flex-col justify-center items-center self-center w-full max-w-[1211px]">
+                    <di id="integration-title"
+                        class="xl:text-8xl lg:text-6xl md:text-4xl text-2xl font-bold italic tracking-tighter leading-tight text-white uppercase whitespace-nowrap px-8 py-4  max-md:whitespace-normal">
+                        Integration and Benefits
+                    </di>
+                    <p
+                        class="mt-3 md:text-2xl text-base lg:leading-7 leading-5 text-white max-w-[701px] max-md:max-w-full">
+                        Our embedded solution makes it incredibly easy to integrate AR try-on functionality into your
+                        products. With minimal code changes, you can provide your customers with a seamless and
+                        immersive 3D Try-on shopping experiences.
+                    </p>
+                </div>
+                <img loading="lazy" src="cards.svg" class="object-contain mt-14 w-full aspect-[2.48] max-md:mt-10 z-10"
+                    alt="Detailed integration benefits diagram showing system architecture" />
+            </section>
+        </section>
+    </section>
+
+    <footer
+        class="flex bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 relative flex-col items-start px-11 py-20 w-full bg-blend-overlay min-h-[592px] bg-cover bg-no-repeat max-md:px-5"
+        style="background-image: url('background.svg');" role="contentinfo">
+        <div class="max-w-[1440px] mx-auto w-full">
+            <img loading="lazy" src="gridlines-two.svg" alt="" class="object-cover absolute inset-0 w-full h-full"
+                aria-hidden="true" />
+            <section
+                class="flex relative flex-col justify-center py-3.5 max-w-full text-2xl font-medium leading-tight text-white w-[433px] max-md:w-full max-md:items-center max-md:text-lg">
+                <img loading="lazy" src="secondary-logo.svg" alt="Company Logo"
+                    class="object-contain self-center max-w-full aspect-[3.13] w-[410px] max-md:w-[200px]" />
+                <p class="flex gap-1.5 justify-center items-center p-2.5 mt-4 w-full max-md:text-center max-md:text-sm">
+                    <span>Copyright 2024</span>
+                    <span class="flex shrink-0 w-2 h-2 bg-white rounded-full" aria-hidden="true"></span>
+                    <span>All rights reserved.</span>
+                </p>
+            </section>
+
+            <section
+                class="flex relative flex-wrap gap-5 justify-between items-start mt-24 ml-4 w-full max-w-[1263px] max-md:flex-col max-md:gap-10 max-md:mt-10 max-md:items-center">
+                <nav class="flex flex-col justify-center mt-2.5 max-md:items-center" role="navigation">
+                    <ul
+                        class="flex gap-9 items-center w-full text-2xl font-bold leading-tight text-indigo-200 max-md:flex-col max-md:gap-4 max-md:text-base">
+                        <li>
+                            <a href="#features"
+                                class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Features</a>
+                        </li>
+                        <li>
+                            <a href="#integrations"
+                                class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Integrations</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div
+                        class="flex gap-10 items-center self-start mt-12 max-md:justify-center max-md:mt-5 max-md:gap-5">
+                        <a href="#"
+                            class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                            aria-label="Social Media Link 1">
+                            <img loading="lazy" src="instagram.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+                        </a>
+                        <a href="#"
+                            class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                            aria-label="Social Media Link 2">
+                            <img loading="lazy" src="linkedin.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+                        </a>
+                        <a href="#"
+                            class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+                            aria-label="Social Media Link 3">
+                            <img loading="lazy" src="email.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+                        </a>
+                    </div>
+                </nav>
+
+                <section
+                    class="flex flex-col font-bold leading-tight max-md:items-center max-md:text-center max-md:text-sm">
+                    <h2 class="text-2xl text-indigo-200 max-md:text-lg">
+                        Reach out to Us:
+                    </h2>
+                    <div
+                        class="flex flex-wrap gap-5 mt-14 w-full text-3xl text-white max-md:mt-5 max-md:text-base max-md:flex-col">
+                        <a href="tel:+91123456789" class="hover:underline">+91 123456789</a>
+                        <a href="mailto:xyz@gmail.com" class="hover:underline">xyz@gmail.com</a>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById("mobile-menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuToggle.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+
+</body>
+
+</html>

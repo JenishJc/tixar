@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="index.css" />
+  <title>Pricing</title>
+</head>
+
+<body>
+  <div class="flex justify-center pt-10 price-bg">
+    <div class="flex relative flex-col -mb-11 max-w-full w-[960px] max-md:mb-2.5">
+      <nav
+        class="flex flex-wrap gap-10 justify-between items-center px-12 py-3 w-full bg-white rounded-3xl shadow-[6px_4px_41px_rgba(0,34,155,0.62)] md:px-5"
+        role="navigation" aria-label="Main navigation">
+        <!-- Logo Section -->
+        <a href="/" class="flex justify-center items-center min-h-[48px] w-[100px] max-sm:w-auto" aria-label="Home">
+          <img loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a72364abecf4421b067507e10f38cfc7984d18f5095e57950f50a9324e14a019?placeholderIfAbsent=true&apiKey=e6e48ba2eabb4a80979bc06a39fd5259"
+            class="object-contain max-w-full w-[100px] max-sm:w-[80px]" alt="Company logo" />
+        </a>
+
+        <!-- Links Section (Hidden on Small Screens) -->
+        <div class="hidden md:flex gap-10 items-center text-base font-bold leading-tight whitespace-nowrap">
+          <a href="./price.html" class="text-blue-700 hover:underline focus:outline-none">
+            Features
+          </a>
+          <a href="#integrations" class="text-blue-700 hover:underline focus:outline-none">
+            Integrations
+          </a>
+        </div>
+
+        <!-- CTA Button (Hidden on Small Screens) -->
+        <button
+          class="hidden md:flex px-6 py-3 text-xl font-bold tracking-tight rounded-2xl border-2 border-blue-600 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-blue-500 whitespace-nowrap"
+          aria-label="Book a Demo">
+          <span class="text-blue-700">Book a Demo</span>
+        </button>
+
+        <!-- Hamburger Menu (Visible on Small Screens) -->
+        <button class="flex md:hidden text-blue-700 text-3xl focus:outline-none z-10" id="mobile-menu-toggle"
+          aria-label="Toggle Menu">
+          ☰
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu"
+          class="hidden absolute top-16 left-0 w-full bg-white rounded-b-3xl -mt-3 shadow-lg p-5 md:hidden">
+          <a href="#features" class="block py-2 text-blue-700 hover:underline focus:outline-none">
+            Features
+          </a>
+          <a href="#integrations" class="block py-2 text-blue-700 hover:underline focus:outline-none">
+            Integrations
+          </a>
+          <button
+            class="block w-full px-4 py-2 mt-4 text-center font-bold text-blue-700 border-2 border-blue-600 rounded-lg hover:bg-blue-50 focus:outline-none"
+            aria-label="Book a Demo">
+            Book a Demo
+          </button>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <section class="pricing-banner">
+    <div class="container">
+      <div class="row">
+        <h1>Let's change <span>the way you shop.</span></h1>
+        <p>
+          It's time to transform with AR try-ons for a enhanced experienced,
+          <span>enhanced visuals, and seamless shopping. Try it ow!</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+      <div class="product-cards">
+        <div class="card light">
+          <div class="main-content">
+            <div class="content">
+              <h2>Jewellery try-on</h2>
+              <p>overall description, 2 sentences at max.</p>
+            </div>
+            <div class="product-image">
+              <img src="./images/product-1.png" alt="product-1" />
+            </div>
+          </div>
+          <a href="#" class="product-btn-white">Book a Demo
+            <span class="arrow"><svg width="30" height="24" viewBox="0 0 30 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_59_249" fill="white">
+                  <path
+                    d="M0 12C0 9.5188 2.09854 7.49964 4.67727 7.49964L12.1048 7.49964C10.5083 5.785 10.5784 2.96178 12.2841 1.31764C13.1612 0.473957 14.3507 0 15.5909 0C16.8311 0 18.0206 0.473957 18.8977 1.31764L30 12L18.8977 22.6824C18.0206 23.526 16.8311 24 15.5909 24C14.3507 24 13.1612 23.526 12.2841 22.6824C10.5769 21.0412 10.5067 18.2135 12.1048 16.5004H4.67727C2.09854 16.5004 0 14.4812 0 12ZM19.6227 10.4999L4.67727 10.4999C4.27584 10.5172 3.8968 10.6828 3.61908 10.9622C3.34136 11.2416 3.18636 11.6134 3.18636 12C3.18636 12.3866 3.34136 12.7584 3.61908 13.0378C3.8968 13.3172 4.27584 13.4828 4.67727 13.5001L19.6227 13.5001L14.4886 18.44C14.2048 18.7256 14.0464 19.1055 14.0464 19.5006C14.0464 19.8957 14.2048 20.2756 14.4886 20.5612C14.781 20.8424 15.1775 21.0004 15.5909 21.0004C16.0043 21.0004 16.4008 20.8424 16.6932 20.5612L25.5909 12L16.6932 3.43881C16.4008 3.15759 16.0043 2.9996 15.5909 2.9996C15.1775 2.9996 14.781 3.15759 14.4886 3.43881C14.2048 3.72439 14.0464 4.10428 14.0464 4.4994C14.0464 4.89452 14.2048 5.27441 14.4886 5.55998L19.6227 10.4999Z" />
+                </mask>
+                <path
+                  d="M12.1048 7.49964L12.1048 12.4996L23.5921 12.4996L15.7641 4.09241L12.1048 7.49964ZM12.2841 1.31764L8.81787 -2.2859L8.81404 -2.28221L12.2841 1.31764ZM18.8977 1.31764L22.3645 -2.28537L22.3639 -2.28589L18.8977 1.31764ZM30 12L33.4667 15.603L37.2114 12L33.4667 8.39698L30 12ZM18.8977 22.6824L22.3639 26.2859L22.3645 26.2854L18.8977 22.6824ZM12.2841 22.6824L15.7503 19.0788L15.7492 19.0778L12.2841 22.6824ZM12.1048 16.5004L15.761 19.911L23.6066 11.5004L12.1048 11.5004L12.1048 16.5004ZM19.6227 10.4999V15.4999L32.0306 15.4999L23.0894 6.89686L19.6227 10.4999ZM4.67727 10.4999V5.49988H4.56972L4.46227 5.5045L4.67727 10.4999ZM4.67727 13.5001L4.46227 18.4955L4.56972 18.5001H4.67727V13.5001ZM19.6227 13.5001L23.0894 17.1031L32.0306 8.50012L19.6227 8.50012V13.5001ZM14.4886 18.44L11.0219 14.837L10.9816 14.8758L10.9421 14.9155L14.4886 18.44ZM14.4886 20.5612L10.9421 24.0857L10.9818 24.1257L11.0224 24.1647L14.4886 20.5612ZM16.6932 20.5612L20.1594 24.1647L20.1599 24.1642L16.6932 20.5612ZM25.5909 12L29.0576 15.603L32.8023 12L29.0576 8.39698L25.5909 12ZM16.6932 3.43881L20.1599 -0.164201L20.1594 -0.164724L16.6932 3.43881ZM15.5909 2.9996L15.5909 7.9996L15.5909 2.9996ZM14.4886 3.43881L11.0224 -0.164724L10.9818 -0.125666L10.9421 -0.0857031L14.4886 3.43881ZM14.4886 5.55998L10.9421 9.0845L10.9816 9.1242L11.0219 9.163L14.4886 5.55998ZM5 12C5 12.2082 4.90479 12.3585 4.83835 12.4224C4.77501 12.4833 4.70979 12.4996 4.67727 12.4996L4.67727 2.49964C-0.479437 2.49964 -5 6.57743 -5 12L5 12ZM4.67727 12.4996H12.1048L12.1048 2.49964L4.67727 2.49964L4.67727 12.4996ZM15.7641 4.09241C15.935 4.27597 15.9562 4.44868 15.9542 4.52065C15.9521 4.59514 15.9203 4.75732 15.7541 4.91749L8.81404 -2.28221C5.14913 1.25053 4.98579 7.19124 8.44543 10.9069L15.7641 4.09241ZM15.7503 4.92118C15.7118 4.95814 15.6766 4.97753 15.6521 4.98728C15.6277 4.997 15.6072 5 15.5909 5V-5C13.0857 -5 10.6461 -4.04445 8.81787 -2.28589L15.7503 4.92118ZM15.5909 5C15.5745 5 15.5541 4.997 15.5297 4.98728C15.5052 4.97753 15.47 4.95814 15.4315 4.92118L22.3639 -2.28589C20.5357 -4.04445 18.0961 -5 15.5909 -5V5ZM15.431 4.92066L26.5333 15.603L33.4667 8.39698L22.3645 -2.28537L15.431 4.92066ZM26.5333 8.39698L15.431 19.0793L22.3645 26.2854L33.4667 15.603L26.5333 8.39698ZM15.4315 19.0788C15.47 19.0419 15.5052 19.0225 15.5297 19.0127C15.5541 19.003 15.5745 19 15.5909 19V29C18.0961 29 20.5357 28.0444 22.3639 26.2859L15.4315 19.0788ZM15.5909 19C15.6072 19 15.6277 19.003 15.6521 19.0127C15.6766 19.0225 15.7118 19.0419 15.7503 19.0788L8.81787 26.2859C10.6461 28.0444 13.0857 29 15.5909 29V19ZM15.7492 19.0778C15.9194 19.2414 15.951 19.4063 15.953 19.48C15.955 19.5511 15.9343 19.7252 15.761 19.911L8.44858 13.0898C4.984 16.8038 5.14511 22.7553 8.81897 26.287L15.7492 19.0778ZM12.1048 11.5004H4.67727L4.67727 21.5004H12.1048L12.1048 11.5004ZM4.67727 11.5004C4.70979 11.5004 4.77501 11.5167 4.83835 11.5776C4.90479 11.6415 5 11.7918 5 12L-5 12C-5 17.4226 -0.479437 21.5004 4.67727 21.5004L4.67727 11.5004ZM19.6227 5.49988L4.67727 5.49988L4.67727 15.4999L19.6227 15.4999V5.49988ZM4.46227 5.5045C2.83264 5.57464 1.25584 6.24708 0.0726681 7.43756L7.16549 14.4868C6.53776 15.1184 5.71902 15.4597 4.89227 15.4953L4.46227 5.5045ZM0.0726681 7.43756C-1.11629 8.63387 -1.81364 10.2648 -1.81364 12L8.18636 12C8.18636 12.9619 7.79901 13.8494 7.16549 14.4868L0.0726681 7.43756ZM-1.81364 12C-1.81364 13.7352 -1.11629 15.3661 0.0726681 16.5624L7.16549 9.51318C7.79901 10.1506 8.18636 11.0381 8.18636 12L-1.81364 12ZM0.0726681 16.5624C1.25584 17.7529 2.83264 18.4254 4.46227 18.4955L4.89227 8.50474C5.71902 8.54033 6.53776 8.88158 7.16549 9.51318L0.0726681 16.5624ZM4.67727 18.5001L19.6227 18.5001L19.6227 8.50012L4.67727 8.50012L4.67727 18.5001ZM16.156 9.8971L11.0219 14.837L17.9554 22.043L23.0894 17.1031L16.156 9.8971ZM10.9421 14.9155C9.74712 16.1179 9.04643 17.757 9.04643 19.5006L19.0464 19.5006C19.0464 20.454 18.6625 21.3332 18.0351 21.9645L10.9421 14.9155ZM9.04643 19.5006C9.04643 21.2442 9.74712 22.8833 10.9421 24.0857L18.0351 17.0367C18.6625 17.668 19.0464 18.5472 19.0464 19.5006L9.04643 19.5006ZM11.0224 24.1647C12.2659 25.3608 13.9125 26.0004 15.5909 26.0004L15.5909 16.0004C16.4424 16.0004 17.2961 16.324 17.9548 16.9576L11.0224 24.1647ZM15.5909 26.0004C17.2693 26.0004 18.9159 25.3608 20.1594 24.1647L13.227 16.9576C13.8857 16.324 14.7394 16.0004 15.5909 16.0004L15.5909 26.0004ZM20.1599 24.1642L29.0576 15.603L22.1242 8.39699L13.2264 16.9582L20.1599 24.1642ZM29.0576 8.39698L20.1599 -0.164201L13.2264 7.04183L22.1242 15.603L29.0576 8.39698ZM20.1594 -0.164724C18.9159 -1.36082 17.2693 -2.0004 15.5909 -2.0004L15.5909 7.9996C14.7393 7.9996 13.8857 7.67599 13.227 7.04235L20.1594 -0.164724ZM15.5909 -2.0004C13.9125 -2.0004 12.2659 -1.36082 11.0224 -0.164724L17.9548 7.04235C17.2961 7.67599 16.4425 7.9996 15.5909 7.9996L15.5909 -2.0004ZM10.9421 -0.0857031C9.74712 1.11674 9.04643 2.75578 9.04643 4.4994L19.0464 4.4994C19.0464 5.45278 18.6625 6.33204 18.0351 6.96333L10.9421 -0.0857031ZM9.04643 4.4994C9.04643 6.24301 9.74712 7.88206 10.9421 9.0845L18.0351 2.03547C18.6625 2.66676 19.0464 3.54602 19.0464 4.4994L9.04643 4.4994ZM11.0219 9.163L16.156 14.1029L23.0894 6.89686L17.9554 1.95697L11.0219 9.163Z"
+                  fill="#007BFF" mask="url(#path-1-inside-1_59_249)" />
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="card dark">
+          <div class="main-content">
+            <div class="content">
+              <h2>watches try-on</h2>
+              <p>overall description, 2 sentences at max.</p>
+            </div>
+            <div class="product-image">
+              <img src="./images/product-2.png" alt="product-1" />
+            </div>
+          </div>
+          <a href="#" class="product-btn-white black">Book a demo
+            <span>
+              <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path-1-inside-1_59_261" fill="white">
+                  <path
+                    d="M0 12C0 9.5188 2.09854 7.49964 4.67727 7.49964L12.1048 7.49964C10.5083 5.785 10.5784 2.96178 12.2841 1.31764C13.1612 0.473957 14.3507 0 15.5909 0C16.8311 0 18.0206 0.473957 18.8977 1.31764L30 12L18.8977 22.6824C18.0206 23.526 16.8311 24 15.5909 24C14.3507 24 13.1612 23.526 12.2841 22.6824C10.5769 21.0412 10.5067 18.2135 12.1048 16.5004H4.67727C2.09854 16.5004 0 14.4812 0 12ZM19.6227 10.4999L4.67727 10.4999C4.27584 10.5172 3.8968 10.6828 3.61908 10.9622C3.34136 11.2416 3.18636 11.6134 3.18636 12C3.18636 12.3866 3.34136 12.7584 3.61908 13.0378C3.8968 13.3172 4.27584 13.4828 4.67727 13.5001L19.6227 13.5001L14.4886 18.44C14.2048 18.7256 14.0464 19.1055 14.0464 19.5006C14.0464 19.8957 14.2048 20.2756 14.4886 20.5612C14.781 20.8424 15.1775 21.0004 15.5909 21.0004C16.0043 21.0004 16.4008 20.8424 16.6932 20.5612L25.5909 12L16.6932 3.43881C16.4008 3.15759 16.0043 2.9996 15.5909 2.9996C15.1775 2.9996 14.781 3.15759 14.4886 3.43881C14.2048 3.72439 14.0464 4.10428 14.0464 4.4994C14.0464 4.89452 14.2048 5.27441 14.4886 5.55998L19.6227 10.4999Z" />
+                </mask>
+                <path
+                  d="M12.1048 7.49964L12.1048 12.4996L23.5921 12.4996L15.7641 4.09241L12.1048 7.49964ZM12.2841 1.31764L8.81787 -2.2859L8.81404 -2.28221L12.2841 1.31764ZM18.8977 1.31764L22.3645 -2.28537L22.3639 -2.28589L18.8977 1.31764ZM30 12L33.4667 15.603L37.2114 12L33.4667 8.39698L30 12ZM18.8977 22.6824L22.3639 26.2859L22.3645 26.2854L18.8977 22.6824ZM12.2841 22.6824L15.7503 19.0788L15.7492 19.0778L12.2841 22.6824ZM12.1048 16.5004L15.761 19.911L23.6066 11.5004L12.1048 11.5004L12.1048 16.5004ZM19.6227 10.4999V15.4999L32.0306 15.4999L23.0894 6.89686L19.6227 10.4999ZM4.67727 10.4999V5.49988H4.56972L4.46227 5.5045L4.67727 10.4999ZM4.67727 13.5001L4.46227 18.4955L4.56972 18.5001H4.67727V13.5001ZM19.6227 13.5001L23.0894 17.1031L32.0306 8.50012L19.6227 8.50012V13.5001ZM14.4886 18.44L11.0219 14.837L10.9816 14.8758L10.9421 14.9155L14.4886 18.44ZM14.4886 20.5612L10.9421 24.0857L10.9818 24.1257L11.0224 24.1647L14.4886 20.5612ZM16.6932 20.5612L20.1594 24.1647L20.1599 24.1642L16.6932 20.5612ZM25.5909 12L29.0576 15.603L32.8023 12L29.0576 8.39698L25.5909 12ZM16.6932 3.43881L20.1599 -0.164201L20.1594 -0.164724L16.6932 3.43881ZM15.5909 2.9996L15.5909 7.9996L15.5909 2.9996ZM14.4886 3.43881L11.0224 -0.164724L10.9818 -0.125666L10.9421 -0.0857031L14.4886 3.43881ZM14.4886 5.55998L10.9421 9.0845L10.9816 9.1242L11.0219 9.163L14.4886 5.55998ZM5 12C5 12.2082 4.90479 12.3585 4.83835 12.4224C4.77501 12.4833 4.70979 12.4996 4.67727 12.4996L4.67727 2.49964C-0.479437 2.49964 -5 6.57743 -5 12L5 12ZM4.67727 12.4996H12.1048L12.1048 2.49964L4.67727 2.49964L4.67727 12.4996ZM15.7641 4.09241C15.935 4.27597 15.9562 4.44868 15.9542 4.52065C15.9521 4.59514 15.9203 4.75732 15.7541 4.91749L8.81404 -2.28221C5.14913 1.25053 4.98579 7.19124 8.44543 10.9069L15.7641 4.09241ZM15.7503 4.92118C15.7118 4.95814 15.6766 4.97753 15.6521 4.98728C15.6277 4.997 15.6072 5 15.5909 5V-5C13.0857 -5 10.6461 -4.04445 8.81787 -2.28589L15.7503 4.92118ZM15.5909 5C15.5745 5 15.5541 4.997 15.5297 4.98728C15.5052 4.97753 15.47 4.95814 15.4315 4.92118L22.3639 -2.28589C20.5357 -4.04445 18.0961 -5 15.5909 -5V5ZM15.431 4.92066L26.5333 15.603L33.4667 8.39698L22.3645 -2.28537L15.431 4.92066ZM26.5333 8.39698L15.431 19.0793L22.3645 26.2854L33.4667 15.603L26.5333 8.39698ZM15.4315 19.0788C15.47 19.0419 15.5052 19.0225 15.5297 19.0127C15.5541 19.003 15.5745 19 15.5909 19V29C18.0961 29 20.5357 28.0444 22.3639 26.2859L15.4315 19.0788ZM15.5909 19C15.6072 19 15.6277 19.003 15.6521 19.0127C15.6766 19.0225 15.7118 19.0419 15.7503 19.0788L8.81787 26.2859C10.6461 28.0444 13.0857 29 15.5909 29V19ZM15.7492 19.0778C15.9194 19.2414 15.951 19.4063 15.953 19.48C15.955 19.5511 15.9343 19.7252 15.761 19.911L8.44858 13.0898C4.984 16.8038 5.14511 22.7553 8.81897 26.287L15.7492 19.0778ZM12.1048 11.5004H4.67727L4.67727 21.5004H12.1048L12.1048 11.5004ZM4.67727 11.5004C4.70979 11.5004 4.77501 11.5167 4.83835 11.5776C4.90479 11.6415 5 11.7918 5 12L-5 12C-5 17.4226 -0.479437 21.5004 4.67727 21.5004L4.67727 11.5004ZM19.6227 5.49988L4.67727 5.49988L4.67727 15.4999L19.6227 15.4999V5.49988ZM4.46227 5.5045C2.83264 5.57464 1.25584 6.24708 0.0726681 7.43756L7.16549 14.4868C6.53776 15.1184 5.71902 15.4597 4.89227 15.4953L4.46227 5.5045ZM0.0726681 7.43756C-1.11629 8.63387 -1.81364 10.2648 -1.81364 12L8.18636 12C8.18636 12.9619 7.79901 13.8494 7.16549 14.4868L0.0726681 7.43756ZM-1.81364 12C-1.81364 13.7352 -1.11629 15.3661 0.0726681 16.5624L7.16549 9.51318C7.79901 10.1506 8.18636 11.0381 8.18636 12L-1.81364 12ZM0.0726681 16.5624C1.25584 17.7529 2.83264 18.4254 4.46227 18.4955L4.89227 8.50474C5.71902 8.54033 6.53776 8.88158 7.16549 9.51318L0.0726681 16.5624ZM4.67727 18.5001L19.6227 18.5001L19.6227 8.50012L4.67727 8.50012L4.67727 18.5001ZM16.156 9.8971L11.0219 14.837L17.9554 22.043L23.0894 17.1031L16.156 9.8971ZM10.9421 14.9155C9.74712 16.1179 9.04643 17.757 9.04643 19.5006L19.0464 19.5006C19.0464 20.454 18.6625 21.3332 18.0351 21.9645L10.9421 14.9155ZM9.04643 19.5006C9.04643 21.2442 9.74712 22.8833 10.9421 24.0857L18.0351 17.0367C18.6625 17.668 19.0464 18.5472 19.0464 19.5006L9.04643 19.5006ZM11.0224 24.1647C12.2659 25.3608 13.9125 26.0004 15.5909 26.0004L15.5909 16.0004C16.4424 16.0004 17.2961 16.324 17.9548 16.9576L11.0224 24.1647ZM15.5909 26.0004C17.2693 26.0004 18.9159 25.3608 20.1594 24.1647L13.227 16.9576C13.8857 16.324 14.7394 16.0004 15.5909 16.0004L15.5909 26.0004ZM20.1599 24.1642L29.0576 15.603L22.1242 8.39699L13.2264 16.9582L20.1599 24.1642ZM29.0576 8.39698L20.1599 -0.164201L13.2264 7.04183L22.1242 15.603L29.0576 8.39698ZM20.1594 -0.164724C18.9159 -1.36082 17.2693 -2.0004 15.5909 -2.0004L15.5909 7.9996C14.7393 7.9996 13.8857 7.67599 13.227 7.04235L20.1594 -0.164724ZM15.5909 -2.0004C13.9125 -2.0004 12.2659 -1.36082 11.0224 -0.164724L17.9548 7.04235C17.2961 7.67599 16.4425 7.9996 15.5909 7.9996L15.5909 -2.0004ZM10.9421 -0.0857031C9.74712 1.11674 9.04643 2.75578 9.04643 4.4994L19.0464 4.4994C19.0464 5.45278 18.6625 6.33204 18.0351 6.96333L10.9421 -0.0857031ZM9.04643 4.4994C9.04643 6.24301 9.74712 7.88206 10.9421 9.0845L18.0351 2.03547C18.6625 2.66676 19.0464 3.54602 19.0464 4.4994L9.04643 4.4994ZM11.0219 9.163L16.156 14.1029L23.0894 6.89686L17.9554 1.95697L11.0219 9.163Z"
+                  fill="#E8EDFF" mask="url(#path-1-inside-1_59_261)" />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="image-content">
+    <div class="container">
+      <div class="benefits">
+        <div class="left-content">
+          <h2>Impress your customers with 3D Try-on!</h2>
+          <p>
+            We provide attractive pricing that helps you stay ahead of the
+            competition and maximize your return on investment.
+          </p>
+          <span class="option"> 70% conversion rate </span>
+          <span class="option"> 33% more visibility </span>
+        </div>
+        <div class="right-content flex justify-center">
+          <img src="./images/animated-char.png" alt="3D Try-on Character" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer
+    class="flex bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 relative flex-col items-start px-11 py-20 w-full bg-blend-overlay min-h-[592px] bg-cover bg-no-repeat max-md:px-5"
+    style="background-image: url('background.svg');" role="contentinfo">
+    <div class="max-w-[1440px] mx-auto w-full">
+      <img loading="lazy" src="gridlines-two.svg" alt="" class="object-cover absolute inset-0 w-full h-full"
+        aria-hidden="true" />
+      <section
+        class="flex relative flex-col justify-center py-3.5 max-w-full text-2xl font-medium leading-tight text-white w-[433px] max-md:w-full max-md:items-center max-md:text-lg">
+        <img loading="lazy" src="secondary-logo.svg" alt="Company Logo"
+          class="object-contain self-center max-w-full aspect-[3.13] w-[410px] max-md:w-[200px]" />
+        <p class="flex gap-1.5 justify-center items-center p-2.5 mt-4 w-full max-md:text-center max-md:text-sm">
+          <span>Copyright 2024</span>
+          <span class="flex shrink-0 w-2 h-2 bg-white rounded-full" aria-hidden="true"></span>
+          <span>All rights reserved.</span>
+        </p>
+      </section>
+
+      <section
+        class="flex relative flex-wrap gap-5 justify-between items-start mt-24 ml-4 w-full max-w-[1263px] max-md:flex-col max-md:gap-10 max-md:mt-10 max-md:items-center">
+        <nav class="flex flex-col justify-center mt-2.5 max-md:items-center" role="navigation">
+          <ul
+            class="flex gap-9 items-center w-full text-2xl font-bold leading-tight text-indigo-200 max-md:flex-col max-md:gap-4 max-md:text-base">
+            <li>
+              <a href="#features" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Features</a>
+            </li>
+            <li>
+              <a href="#integrations"
+                class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Integrations</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:underline focus:outline-none focus:ring-2 focus:ring-white">Contact Us</a>
+            </li>
+          </ul>
+
+          <div class="flex gap-10 items-center self-start mt-12 max-md:justify-center max-md:mt-5 max-md:gap-5">
+            <a href="#"
+              class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label="Social Media Link 1">
+              <img loading="lazy" src="instagram.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+            </a>
+            <a href="#"
+              class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label="Social Media Link 2">
+              <img loading="lazy" src="linkedin.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+            </a>
+            <a href="#"
+              class="flex justify-center items-center w-10 h-10 bg-white hover:scale-110 transition-all duration-300 rounded-full focus:outline-none focus:ring-2 focus:ring-white"
+              aria-label="Social Media Link 3">
+              <img loading="lazy" src="email.svg" alt="" class="w-5 h-5" aria-hidden="true" />
+            </a>
+          </div>
+        </nav>
+
+        <section class="flex flex-col font-bold leading-tight max-md:items-center max-md:text-center max-md:text-sm">
+          <h2 class="text-2xl text-indigo-200 max-md:text-lg">
+            Reach out to Us:
+          </h2>
+          <div
+            class="flex flex-wrap gap-5 mt-14 w-full text-3xl text-white max-md:mt-5 max-md:text-base max-md:flex-col">
+            <a href="tel:+91123456789" class="hover:underline">+91 123456789</a>
+            <a href="mailto:xyz@gmail.com" class="hover:underline">xyz@gmail.com</a>
+          </div>
+        </section>
+      </section>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</body>
+
+</html>
